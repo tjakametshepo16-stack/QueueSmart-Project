@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QueueSmart | University IT Services</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="toast" class="toast"></div>
+<section id="authView" class="auth-shell">
+  <div class="auth-visual">
+    <div class="brand">
+      <img src="QueueSmart Logo.png" alt="QueueSmart Logo" class="brand-logo" style="height: 120px; width: auto;">
+      <span>QueueSmart</span>
+    </div>
+    <div class="hero-copy">
+      <span class="eyebrow">UNIVERSITY IT SERVICES</span>
+      <h1>Skip the crowd.<br><span>Know your place.</span></h1>
+      <p>Book appointments, join the digital queue and track your service without waiting around the IT department.</p>
+      <div class="feature-row"><div> Live queue status</div><div>Appointments</div><div>Laptop services</div></div>
+    </div>
+  </div>
+  <div class="auth-card">
+    <div class="auth-tabs"><button class="active" data-auth="login">Sign in</button><button data-auth="register">Create account</button></div>
+    <form id="loginForm" class="auth-form">
+      <h2>Welcome back</h2><p class="muted">Sign in to your QueueSmart account.</p>
+      <label>Username<input name="username" required autocomplete="username" placeholder="e.g. student1"></label>
+      <label>Password<input name="password" type="password" required autocomplete="current-password" placeholder="Your password"></label>
+      <button class="primary wide">Sign in</button>
+      <div class="demo-hint">Demo: <b>student1</b> / <b>student123</b></div>
+    </form>
+    <form id="registerForm" class="auth-form hidden">
+      <h2>Create student account</h2><p class="muted">Register once, then manage your IT service visits.</p>
+      <label>Full name<input name="fullName" required placeholder="Your full name"></label>
+      <label>Student number<input name="studentNumber" required placeholder="e.g. 202612345"></label>
+      <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
+      <label>Username<input name="username" required placeholder="Choose a username"></label>
+      <label>Password<input name="password" type="password" minlength="8" required placeholder="At least 8 characters"></label>
+      <button class="primary wide">Create account</button>
+    </form>
+  </div>
+</section>
+
+<div id="appView" class="app hidden">
+  <aside class="sidebar">
+    <div class="brand">
+      <span>QueueSmart</span>
+    </div>
+    <div class="profile-mini"><div id="avatar" class="avatar">Q</div><div><strong id="sideName">User</strong><small id="sideRole">Student</small></div></div>
+    <nav id="nav"></nav>
+    <button id="logout" class="logout">↪ <span>Sign out</span></button>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><span class="eyebrow" id="pageEyebrow">DASHBOARD</span><h1 id="pageTitle">Dashboard</h1></div><div class="connection"><i></i> MySQL connected</div></header>
+    <div id="content"></div>
+  </main>
+</div>
+<script src="/js/app.js"></script>
+</body>
+</html>
